@@ -55,10 +55,10 @@ export default function prompt(
     };
 
     if (typeof callbackOrButtons === 'function') {
-        buttons.push({
+        buttons = [{
             text: 'OK',
             onPress: callbackOrButtons
-        });
+        }]
     }
 
     if (options) {
